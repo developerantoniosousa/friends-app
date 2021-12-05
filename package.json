@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prepush": "npm run lint && npm run test",
+    "postinstall": "rm -rf .git/hooks/pre-push && npx husky install && rm -rf .git/hooks/pre-commit"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
@@ -27,6 +29,7 @@
     "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
+    "husky": "^7.0.4",
     "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-test-renderer": "17.0.2",
