@@ -1,4 +1,4 @@
-package com.remindbirthdays;
+package br.com.antoniosousa.remindbirthdays;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
