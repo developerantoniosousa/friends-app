@@ -7,6 +7,5 @@ module.exports = {
         moduleName: 'react-native-dotenv',
       },
     ],
-    ,
   ],
 };
